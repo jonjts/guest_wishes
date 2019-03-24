@@ -37,20 +37,20 @@ public class GuestsAPI {
     /**
      * Find a lodging using the places wishes for the guest
      * @param id
-     * @param radios
+     * @param radius
      * @return
      */
     @GET
     @Path("/{id}/findHotel")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response findHotel(@PathParam("id") Long id, @QueryParam("radios") Integer radios) {
+    public Response findHotel(@PathParam("id") Long id, @QueryParam("radius") Integer radius) {
         if (isGuestFound(id)) {
             try {
                 Double latitudeAverage = wishRepository.getLatitudeAverage(id);
                 Double longitudeAverage = wishRepository.getLongitudeAverage(id);
                 String location = latitudeAverage + "," + longitudeAverage;
 
-                Request request = createResquestToMaps(radios, location);
+                Request request = createResquestToMaps(radius, location);
 
 
                 OkHttpClient client = new OkHttpClient();

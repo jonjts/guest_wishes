@@ -1,3 +1,7 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
 # Compiled class file
 *.class
 
@@ -11,6 +15,13 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
 
 # Package Files #
 *.jar

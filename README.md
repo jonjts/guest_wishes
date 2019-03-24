@@ -28,7 +28,7 @@ POST /guests
 }
 ```
 
-Now, you need to add the guest wishes places.
+Now, you need to add the guest wishes places. (If you have some questions about how get latitude and longitude see it: https://support.google.com/maps/answer/18539?).
 Here an example:
 
 ```

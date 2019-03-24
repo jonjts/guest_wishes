@@ -1,2 +1,7 @@
 # guest_wishes
-Create a backend project to persists what the guest want to visit when he going to a place (this place can be a city, contry...) and recomend a list of lodging
+Rest API to persists where the guest want to visit and recommend a list of lodging.
+
+How run it
+
+1. Create the databse "guest_wishes" in your postgres database.
+2. In your console, run `gradle bootrun`
